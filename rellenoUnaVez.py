@@ -26,7 +26,7 @@ class Principal:
         self.bitLabel = Label(win, text = "Resultado bits", fg = 'grey', font = ('Arial', 12))
         self.bitLabel.grid(row = 5, column = 1, pady = 5)
 
-        self.resultadoBits = Text(win, width = 20, height = 2, fg = 'green', font = ('Arial', 14), padx=5, pady=10)
+        self.resultadoBits = Text(win, width = 20, height = 5, fg = 'green', font = ('Arial', 14), padx=5, pady=10)
         self.resultadoBits.grid(row = 6, column = 1)
 
     #Cifrar
@@ -65,5 +65,5 @@ def binarioToString(s):
 root=Tk()
 mywin=Principal(root)
 root.title('RELLENO DE UNA SOLA VEZ')
-root.geometry("400x350+10+10")
+root.geometry("400x500+10+10")
 root.mainloop()
